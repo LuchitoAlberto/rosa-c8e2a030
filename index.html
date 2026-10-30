@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#FFE3EA">
+<title>Para Amoshito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..900,0..100&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="clave" hidden>
+  <form id="claveForm" class="gate-box" autocomplete="off">
+    <p class="gate-regalo" aria-hidden="true">🔒</p>
+    <h1 id="ctitulo"></h1>
+    <p id="cpista"></p>
+    <input id="cinput" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" aria-labelledby="ctitulo">
+    <button id="cboton" class="sticker" type="submit"></button>
+    <p id="cerror" role="alert"></p>
+  </form>
+</section>
+
+<section id="gate" hidden>
+  <div class="gate-box">
+    <p class="gate-regalo" aria-hidden="true">🎁</p>
+    <h1 id="gtitulo"></h1>
+    <p id="gdetalle"></p>
+    <div id="gcount" class="cuenta"></div>
+  </div>
+</section>
+
+<main id="escena" hidden>
+  <section id="mesa" class="mesa">
+    <header class="portada" id="portada">
+      <h1 id="titulo"></h1>
+      <p id="subtitulo"></p>
+      <button id="abrir" class="sticker" type="button"></button>
+    </header>
+    <h2 id="tituloFotos" class="titulo-fotos" hidden></h2>
+    <p id="pista" class="pista" hidden></p>
+  </section>
+
+  <section class="carta-zona">
+    <div id="cartaWrap" class="carta-wrap">
+      <div class="carta-clip">
+        <article id="nota" class="nota">
+          <div class="mensaje"></div>
+          <p class="firma"></p>
+        </article>
+      </div>
+    </div>
+    <button id="sobre" class="sobre" type="button" aria-label="Abrir la carta">
+      <span class="sobre-cuerpo"></span>
+      <span class="sobre-frente"></span>
+      <span class="sobre-tapa"></span>
+      <span class="sello" aria-hidden="true">💌</span>
+    </button>
+  </section>
+
+  <button id="musica" class="sticker redondo" type="button" aria-label="Música" hidden>🎵</button>
+</main>
+
+<audio id="audio" src="musica.mp3" loop preload="metadata"></audio>
+
+<script src="content.js"></script>
+<script src="logica.js"></script>
+<script src="detalles/corazones.js"></script>
+<script src="detalles/arrastrar.js"></script>
+<script src="detalles/voltear.js"></script>
+<script src="detalles/logro.js"></script>
+<script src="detalles/besito.js"></script>
+<script src="detalles/llenarAmor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
